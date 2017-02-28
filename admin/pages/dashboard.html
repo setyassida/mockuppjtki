@@ -31,11 +31,16 @@
     <script src="../vendor/morrisjs/morris.min.js"></script>
     <script src="../data/morris-data.js"></script>
 
-     <!-- DataTables CSS -->
+    <!-- DataTables CSS -->
     <link href="../vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
 
     <!-- DataTables Responsive CSS -->
     <link href="../vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+
+        <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <script src="http://cdn.oesmith.co.uk/morris-0.4.1.min.js"></script>
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -149,6 +154,7 @@
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
+                        <li style="background-color: #48C2F0; height: 2200px;"></li>
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
@@ -167,7 +173,7 @@
             <!-- /.row -->
             <div class="row">
                 <div class="col-lg-4 col-md-6">
-                    <div class="panel panel-green">
+                    <div class="panel panel-primary">
                         <div class="panel-heading">
                             <div class="row">
                                 <div class="col-xs-3">
@@ -235,6 +241,7 @@
             </div>
             <!-- /.row -->
             <!-- / website -->
+            
 
 
             <div class="row">
@@ -297,8 +304,51 @@
                             <i class="fa fa-bar-chart-o fa-fw"></i> Presentase Hutang
                         </div>
                         <div class="panel-body">
-                            <div id="morris-donut-chart"></div>
-                            <a href="#" class="btn btn-default btn-block">View Details</a>
+                            <div style="text-align: center;" id="donut-example"></div>
+                            <br>
+                            <div class="panel panel-default">
+                        <div style="text-align: center;" class="panel-heading">
+                            5 Hutang Terakhir
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Username</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -308,11 +358,54 @@
                     <div class="col-lg-6 col-md-6">
             <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Presentasi Piutang
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Presentase Piutang
                         </div>
                         <div class="panel-body">
-                            <div id="morris-donut-chart"></div>
-                            <a href="#" class="btn btn-default btn-block">View Details</a>
+                            <div style="text-align: center;" id="donut-example2"></div>
+                            <br>
+                            <div class="panel panel-default">
+                        <div style="text-align: center;" class="panel-heading">
+                            5 Piutang Terakhir
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Username</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -338,7 +431,93 @@
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <div id="morris-area-chart"></div>
+                            <div id="graph"></div>
+                            <br>
+                            <div class="panel panel-default">
+                        <div style="text-align: center;" class="panel-heading">
+                            10 TKI Terbaru
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Nama</th>
+                                        <th>Alamat</th>
+                                        <th>Telepon</th>
+                                        <th>Paspor</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="odd gradeX">
+                                        <td>Setyassida Novian Putra D</td>
+                                        <td>JL. KARTINI NO. 19-A MALANG</td>
+                                        <td>085724567827</td>
+                                        <td>AB-6738GJ-KIG</td>
+                                    </tr>
+                                    <tr class="even gradeC">
+                                        <td>Budi Pangestu</td>
+                                        <td>Jl. Kapten Tendean No. 24, Mampang Prapatan Jakarta Selatan</td>
+                                        <td>085763452982</td>
+                                        <td>BD-673BYG-GFY</td>
+                                    </tr>
+                                    <tr class="odd gradeA">
+                                        <td>Gian Sebastian</td>
+                                        <td>Jl. Raya Pondok Kopi Blok F1 No. 3 Jakarta Timur</td>
+                                        <td>087234528726</td>
+                                        <td>TF-3483HU-JIG</td>
+                            </tr>
+                            <tr class="odd gradeX">
+                                        <td>Setyassida Novian Putra D</td>
+                                        <td>JL. KARTINI NO. 19-A MALANG</td>
+                                        <td>085724567827</td>
+                                        <td>AB-6738GJ-KIG</td>
+                                    </tr>
+                                    <tr class="even gradeC">
+                                        <td>Budi Pangestu</td>
+                                        <td>Jl. Kapten Tendean No. 24, Mampang Prapatan Jakarta Selatan</td>
+                                        <td>085763452982</td>
+                                        <td>BD-673BYG-GFY</td>
+                                    </tr>
+                                    <tr class="odd gradeA">
+                                        <td>Gian Sebastian</td>
+                                        <td>Jl. Raya Pondok Kopi Blok F1 No. 3 Jakarta Timur</td>
+                                        <td>087234528726</td>
+                                        <td>TF-3483HU-JIG</td>
+                            </tr>
+                            <tr class="odd gradeX">
+                                        <td>Setyassida Novian Putra D</td>
+                                        <td>JL. KARTINI NO. 19-A MALANG</td>
+                                        <td>085724567827</td>
+                                        <td>AB-6738GJ-KIG</td>
+                                    </tr>
+                                    <tr class="even gradeC">
+                                        <td>Budi Pangestu</td>
+                                        <td>Jl. Kapten Tendean No. 24, Mampang Prapatan Jakarta Selatan</td>
+                                        <td>085763452982</td>
+                                        <td>BD-673BYG-GFY</td>
+                                    </tr>
+                                    <tr class="odd gradeA">
+                                        <td>Gian Sebastian</td>
+                                        <td>Jl. Raya Pondok Kopi Blok F1 No. 3 Jakarta Timur</td>
+                                        <td>087234528726</td>
+                                        <td>TF-3483HU-JIG</td>
+                            </tr>
+                            <tr class="even gradeC">
+                                        <td>Budi Pangestu</td>
+                                        <td>Jl. Kapten Tendean No. 24, Mampang Prapatan Jakarta Selatan</td>
+                                        <td>085763452982</td>
+                                        <td>BD-673BYG-GFY</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -356,8 +535,8 @@
     </div>
     <!-- /#wrapper -->
 
-    <!-- jQuery -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
+
+
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -368,6 +547,49 @@
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
 
+<script type="text/javascript">
+    /*
+ * Play with this code and it'll update in the panel opposite.
+ *
+ * Why not try some of the options above?
+ */
+Morris.Donut({
+  element: 'donut-example',
+  data: [
+    {label: "Hutang Lunas", value: 27068572},
+    {label: "Hutang Belum Lunas", value: 17068572}
+  ]
+});
+
+Morris.Donut({
+  element: 'donut-example2',
+  data: [
+   {label: "Piutang Lunas", value: 17068572},
+    {label: "Piutang Belum Lunas", value: 27068572}
+  ]
+});
+
+// Use Morris.Area instead of Morris.Line
+Morris.Area({
+  element: 'graph',
+  data: [
+    {x: '2010 Q4', y: 3, z: 7},
+    {x: '2011 Q1', y: 3, z: 4},
+    {x: '2011 Q2', y: null, z: 1},
+    {x: '2011 Q3', y: 2, z: 5},
+    {x: '2011 Q4', y: 8, z: 2},
+    {x: '2012 Q1', y: 4, z: 4}
+  ],
+  xkey: 'x',
+  ykeys: ['y', 'z'],
+  labels: ['Y', 'Z']
+}).on('click', function(i, row){
+  console.log(i, row);
+});
+
+    
+</script>
 </body>
 
 </html>
+
