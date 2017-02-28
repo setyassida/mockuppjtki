@@ -43,7 +43,7 @@ template {
   display: none;
 }
 a {
-  background-color: transparent;
+  background-color: rgb(72, 194, 240);
 }
 a:active,
 a:hover {
